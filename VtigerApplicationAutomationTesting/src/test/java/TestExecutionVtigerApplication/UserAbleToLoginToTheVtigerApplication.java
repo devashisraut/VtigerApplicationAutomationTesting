@@ -7,6 +7,7 @@ import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import UtilityFileVtigerApplication.PropertiesFileUtility;
 import UtilityFileVtigerApplication.SeleniumUtility;
@@ -14,8 +15,8 @@ import UtilityFileVtigerApplication.SeleniumUtility;
 import VtigerObjectRepositry.LoginPager;
 
 public class UserAbleToLoginToTheVtigerApplication {
-
-	public static void main(String[] args) throws IOException, InterruptedException {
+	@Test
+	public  void checkToTheUserIsAbleToLogInIntoTheVigerApplication() throws IOException, InterruptedException {
 		PropertiesFileUtility pfu=new PropertiesFileUtility();
 		SeleniumUtility wdu=new SeleniumUtility();
 		WebDriver driver=new ChromeDriver();
